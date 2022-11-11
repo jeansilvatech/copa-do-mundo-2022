@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+body {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.titles {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titles .logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation h2 {
+    margin: 10px 15px;
+    padding: 5px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+
+.titles .groups-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 40px;
+}
+
+.groups-name h2,
+.rounds h2 {
+    padding: 10px;
+    color: #c1c1c1;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.rounds {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    margin: 20px;
+}
+
+.container .flags {
+    width: 90px;
+    height: 57px;
+    border-radius: 10px;
+    animation: flag 2s ease-in-out;
+}
+
+.container .flags:hover {
+    transform: scale(1.4);
+}
+
+@keyframes flag {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.countries {
+    padding: 10px;
+    width: 200px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countries p {
+    padding: 10px 5px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.games {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+.game p {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+}
+
+.games .round {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #c1c1c1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.round-game {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: enter 2s ease-in-out;
+}
+
+.round .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date p {
+    font-size: 12px;
+    color: #c1c1c1;
+}
+
+.date .gold {
+    color: gold;
+    letter-spacing: 2px;
+}
+
+.game .versus {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game .versus p {
+    font-size: 15px;
+    width: 35px;
+}
+
+.countries-game .flag-game {
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.round2 {
+    display: none;
+}
+
+.round3 {
+    display: none;
+}
+
+.green {
+    background-color: #006400;
+}
+
+.green:hover {
+    transform: scale(1.1);
+}
+
+.container .classification {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.classification-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 530px;
+    height: 230px;
+    margin: 10px;
+    animation: enter 2s ease-in-out;
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.title-table,
+.team {
+    display: flex;
+}
+
+.title-table p,
+.team p {
+    width: 40px;
+    font-size: 13px;
+    text-align: start;
+    padding: 10px;
+}
+
+.classification-group .teams-name {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.team-first,
+.team-secondary {
+    border-left: 2px solid #006400;
+}
+
+.team .flag-classification {
+    width: 20px;
+    height: 15px;
+    margin: 1px 5px;
+}
+
+.btn-round-final,
+.btn-round-arrow-back {
+    display: none;
+
+}
+
+.btn {
+    animation: enter 2s ease-in-out;
+}
+
+.round-game {
+    width: 1000px;
+
+}
+
+.round-final {
+    display: none;
+}
+
+.eliminate {
+    filter: grayscale(1);
+}
+
+@media (max-width:768px) {
+    .classification-group {
+        width: 340px;
+        height: 230px;
+        margin: 5px;
+    }
+
+    .classification-group .teams-name {
+        width: 110px;
+    }
+
+    .title-table p,
+    .team p {
+        width: 25px;
+        font-size: 11px;
+
+    }
+
+}
+
+@media (max-width:425px) {
+    .countries {
+        width: 190px;
+    }
+
+    .games .round {
+        margin: 0;
+    }
+
+}
