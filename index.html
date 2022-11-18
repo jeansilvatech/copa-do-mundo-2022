@@ -28,6 +28,7 @@
                 <h2 class="title-countries">Países</h2>
                 <h2 class="title-games">Jogos</h2>
                 <h2 class="title-classification">Classificação</h2>
+                <h2 class="title-about"><i class="fa-solid fa-circle-info"></i></h2>
             </div>
             <div class="groups-name">
                 <h2 class="btn-group-a">A</h2>
@@ -91,8 +92,33 @@
         <div class="classification">
            
         </div>
+        <div class="about">
+           <div class="container-about">
+            <div class="title">
+                <h3 class="title-for">Desenvolvido por</h3>
+                <img src="https://github.com/jeansilvatech.png" alt="">
+                <h2 class="name">Jean Silva</h2>
+                <h4 class="dev">Front End Developer Jr</h4>
+            </div>
+            <div class="social">
+                <a href="https://github.com/jeansilvatech"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeanpesil/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jeansilvatech"><i class="fa-brands fa-instagram"></i></a>
+            </div>
 
+            <div class="footer">
+            <p>Copyright © <span></span></p>
+            </div>
+        </div>
+        </div>
+        
 </div>
+
+<script>
+    const year = new Date().getFullYear()
+    const span = document.querySelector('.footer p span');
+    span.innerText = year
+</script>
 <script type="module" src="./assets/js/script.js"></script>
 </body>
 

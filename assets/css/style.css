@@ -31,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .navigation {
@@ -47,6 +48,9 @@ body {
     cursor: pointer;
     border-radius: 7px;
     text-transform: uppercase;
+}
+.navigation h2:hover{
+    color: #c1c1c1;
 }
 
 .titles .groups-name {
@@ -209,6 +213,7 @@ body {
 
 .game .versus p {
     font-size: 15px;
+    letter-spacing: 4px;
     width: 35px;
 }
 
@@ -318,7 +323,61 @@ body {
 .eliminate {
     filter: grayscale(1);
 }
-
+.about{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: enter 2s ease-in-out;
+}
+.about .container-about{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-about .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container-about .title img{
+    width: 70px;
+    border-radius: 50%;
+}
+.container-about .title h2{
+    padding: 5px;
+    text-transform: uppercase;
+}
+.container-about .title h3{
+    color: #006400;
+    margin-bottom: 10px;
+}
+.container-about .title h4{
+    color: #A9A9A9;
+}
+.container-about .social{
+    margin-bottom: 10px;
+}
+.container-about .social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+.container-about .social a i{
+    font-size: 25px;
+}
+.container-about .social a i:hover{
+    color: #808080;
+}
+.footer p,span{
+    font-size: 12px;
+}
 @media (max-width:768px) {
     .classification-group {
         width: 340px;
@@ -336,16 +395,37 @@ body {
         font-size: 11px;
 
     }
+    
 
 }
 
 @media (max-width:425px) {
-    .countries {
-        width: 190px;
+    .group .countries {
+        width: 180px;
     }
-
+    .group .countries p{
+        height: 20px;
+    }
     .games .round {
         margin: 0;
     }
+    .navigation h2 {
+        font-size: 16px;
+        margin: 10px 10px;
+    }
+    .groups-name h2,
+    .rounds h2 {
+    font-size: 13px;
+    }
+    .container .groups{
+    margin: 20px 0 20px 0;
+    }
+}
 
+@media (max-width:400px) {
+    
+    .navigation h2 {
+        font-size: 14px;  
+    }
+    
 }

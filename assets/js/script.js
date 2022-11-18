@@ -1,4 +1,4 @@
-import { countries, time } from "./countries.js";
+import { countries, language, time } from "./countries.js";
 //  Páginas de grupos
  const groupA = document.querySelector('.group-a')
  const groupB = document.querySelector('.group-b')
@@ -21,32 +21,36 @@ import { countries, time } from "./countries.js";
 
  const groups = document.querySelector('.groups')
  const games = document.querySelector('.games')
- const btnGames = document.querySelector('.title-games')
- const btnCountries = document.querySelector('.title-countries')
- const btnClassification = document.querySelector('.title-classification')
+
+ export const btnGames = document.querySelector('.title-games')
+ export const btnCountries = document.querySelector('.title-countries')
+ export const btnClassification = document.querySelector('.title-classification')
+ const btnAbout = document.querySelector('.title-about');
 
  const groupsName = document.querySelector('.groups-name')
  const roundsHeader = document.querySelector('.rounds')
  
- const btnRound1 = document.querySelector('.btn-round1')
- const btnRound2 = document.querySelector('.btn-round2')
- const btnRound3 = document.querySelector('.btn-round3')
- const btnRoundFinal= document.querySelector('.btn-round-final')
-
+ export const btnRound1 = document.querySelector('.btn-round1')
+ export const btnRound2 = document.querySelector('.btn-round2')
+ export const btnRound3 = document.querySelector('.btn-round3')
+ export const btnRoundFinal= document.querySelector('.btn-round-final')
+// Páginas
  const round1 = document.querySelector('.round1')
  const round2 = document.querySelector('.round2')
  const round3= document.querySelector('.round3')
  const roundFinal = document.querySelector('.round-final')
+ const about = document.querySelector('.about')
  
 const btnRoundArrow = document.querySelector('.btn-round-arrow')
 const btnRoundArrowBack = document.querySelector('.btn-round-arrow-back')
 const classification = document.querySelector('.classification')
 const flagUrl = '/assets/img/flags/'
+language();
 btnCountries.style.borderBottom = '4px solid white'
 btnGames.style.borderBottom = '4px solid transparent'
 btnClassification.style.borderBottom = '4px solid transparent'
+btnAbout.style.borderBottom = '4px solid transparent'
 btnRound1.style.backgroundColor = 'green'
-
 btnRoundArrow.addEventListener('click', ()=>{
     btnRound1.style.display= 'none';
     btnRound2.style.display= 'none';
@@ -71,8 +75,10 @@ btnCountries.addEventListener('click', ()=>{
     groups.style.display= 'flex'
     games.style.display= 'none'
     classification.style.display = 'none'
+    about.style.display = 'none';
     roundsHeader.style.display = 'none'
     groupsName.style.display = 'flex'
+    btnAbout.style.color = '#fff'
 
 })
 btnGames.addEventListener('click', ()=>{
@@ -82,8 +88,10 @@ btnGames.addEventListener('click', ()=>{
     groups.style.display= 'none'
     games.style.display= 'flex'
     classification.style.display = 'none'
+    about.style.display = 'none';
     groupsName.style.display ='none'
     roundsHeader.style.display = 'flex'
+    btnAbout.style.color = '#fff'
 })
 btnClassification.addEventListener('click', ()=>{
     btnClassification.style.borderBottom = '4px solid white'
@@ -92,8 +100,24 @@ btnClassification.addEventListener('click', ()=>{
     groups.style.display= 'none'
     games.style.display= 'none'
     classification.style.display = 'flex'
+    about.style.display = 'none';
     groupsName.style.display ='none'
     roundsHeader.style.display = 'none'
+    btnAbout.style.color = '#fff'
+})
+btnAbout.addEventListener('click', ()=>{
+    btnAbout.style.color = '#006400'
+    btnGames.style.borderBottom = '4px solid transparent'
+    btnCountries.style.borderBottom = '4px solid transparent'
+    btnClassification.style.borderBottom = '4px solid transparent'
+    groups.style.display= 'none'
+    games.style.display= 'none'
+    classification.style.display = 'none'
+    groupsName.style.display ='none'
+    roundsHeader.style.display = 'none'
+    groupsName.style.display ='none'
+    roundsHeader.style.display = 'none'
+    about.style.display = 'flex';
 })
 btnGroupA.addEventListener('click', ()=>{
     btnGroupA.style.backgroundColor = '#006400'
@@ -287,6 +311,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     round2.style.display = 'none'
     round3.style.display = 'none'
 })
+
     groupA.innerHTML = `
     <div class="countries">
         <img class="flags" src="${flagUrl}${countries.Catar.code}.svg" alt="">
@@ -443,7 +468,7 @@ btnRoundFinal.addEventListener('click', ()=>{
                     </div>
 
                     <div class="versus">
-                        <p> X </p>
+                        <p>X</p>
                     </div>
 
                     <div class="countries-game">
@@ -2277,3 +2302,4 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 </div>
     `
+    
