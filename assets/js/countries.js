@@ -1,4 +1,4 @@
-import { btnClassification, btnCountries, btnGames, btnRound1, btnRound2, btnRound3, btnRoundFinal } from "./script.js"
+import { btnClassification, btnCountries, btnGames, btnRound1, btnRound2, btnRound3, btnRoundFinal, btnStrikers } from "./script.js"
 
 
 const ptBR = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sabádo"]
@@ -194,7 +194,6 @@ export const countries = {
         } 
     }
 
-
 function timeGMT(){
     const date = new Date()
     const gmt = [date.toTimeString()]
@@ -280,8 +279,10 @@ function timeGMT(){
             time.hour =["13:00 UTC +3","16:00 UTC +3", "18:00 UTC +3","19:00 UTC +3","22:00 UTC +3"]
     }
 }
+const languageUser = window.navigator.language
+export let groupTitle = 'Grupo'
+export let teamTitle = 'Equipe'
 export function language(){
-    const languageUser = window.navigator.language
     switch(languageUser){
         case 'pt-BR':
             time.date=[  
@@ -321,6 +322,7 @@ export function language(){
             btnRound3.innerText = '3ª Rodada'
             btnRoundFinal.innerText = 'Fase Final'
         break;
+
         case 'es' ||'es-ES' :
             time.date=[  
                 `20/11 - ${es[0]}`, 
@@ -389,7 +391,10 @@ export function language(){
             countries.Gana.name= 'Ghana'
             countries.Uruguai.name= 'Uruguay'
             countries.CoreiaSul.name= 'Corea del Sur'
+            teamTitle = 'Equipo'
+            btnStrikers.innerText = 'Artilleros'
         break;
+        
         default:
             time.date= [  
                 `20/11 - ${en[0]}`, 
@@ -460,6 +465,9 @@ export function language(){
             countries.Gana.name= 'Ghana'
             countries.Uruguai.name= 'Uruguay'
             countries.CoreiaSul.name= 'South Korea'
+            groupTitle = 'Group'
+            teamTitle = 'Team'
+            btnStrikers.innerText = 'Strikers'
 
     }
 }

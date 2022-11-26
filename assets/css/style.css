@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -10,7 +11,7 @@
 body {
     background-color: #1c1c1c;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Josefin Sans','Roboto', sans-serif;
     overflow-x: hidden;
 }
 
@@ -59,6 +60,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.2);
+    animation: enter 2s ease-in-out;
 }
 
 .logo img {
@@ -66,16 +68,21 @@ body {
 }
 
 .groups-name h2,
-.rounds h2 {
+.rounds h2,
+.goals h2{
     padding: 10px;
     color: #c1c1c1;
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
 }
-
-.rounds {
+.goals,
+.rounds{
     display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -185,6 +192,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     animation: enter 2s ease-in-out;
+    /* padding-bottom: 20px; */
 }
 
 .round .date {
@@ -202,6 +210,7 @@ body {
 .date .gold {
     color: gold;
     letter-spacing: 2px;
+    font-size: 10px;
 }
 
 .game .versus {
@@ -224,14 +233,18 @@ body {
     border-radius: 5px;
 }
 
-.round2 {
+.round1,
+.round3,
+.round-final {
     display: none;
 }
 
-.round3 {
-    display: none;
+.round .confette{
+    position: absolute;
+    width: 200px;
+    height: 145px;
+    object-fit: cover;
 }
-
 .green {
     background-color: #006400;
 }
@@ -239,7 +252,6 @@ body {
 .green:hover {
     transform: scale(1.1);
 }
-
 .container .classification {
     display: none;
     justify-content: center;
@@ -288,13 +300,28 @@ body {
     width: 200px;
     display: flex;
     align-items: center;
+    border-left: 2px solid transparent;
 }
 
 .team-first,
 .team-secondary {
     border-left: 2px solid #006400;
+    animation: classification 5s infinite;
 }
-
+@keyframes classification {
+    0%{
+        border-left: 2px solid #006400;
+    }
+    50%{
+        border-left: 2px solid  #1E90FF;
+    }
+    75%{
+        border-left: 2px solid  #FFFF00;
+    }
+    100%{
+        border-left: 2px solid #006400;
+    }
+}
 .team .flag-classification {
     width: 20px;
     height: 15px;
@@ -314,10 +341,6 @@ body {
 .round-game {
     width: 1000px;
 
-}
-
-.round-final {
-    display: none;
 }
 
 .eliminate {
@@ -375,8 +398,77 @@ body {
 .container-about .social a i:hover{
     color: #808080;
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    width: 160px;
+}
 .footer p,span{
+    margin: 10px;
     font-size: 12px;
+}
+.footer i{
+    font-size: 25px;
+    margin: 10px;
+}
+.footer .code-pix{
+    margin-top: 5px;
+    color: #1c1c1c;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.strikers{
+    display: none;
+    width: 1000px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    animation: enter 2s ease-in-out;
+}
+.strikers .title{
+    margin-bottom: 20px;
+}
+.strikers .player{
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid #808080;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.player .flag-player{
+    width: 30px;
+    height: 20px;
+}
+.player .player-name{
+    width: 200px;
+}
+.player h2{
+    font-size: 15px;
+   margin-left: 10px;
+   
+}
+.player .goals-icon{
+    width: 20px;
+}
+.player p{
+    padding: 10px;
+    font-size: 20px;
+}
+.back-classification{
+    display: none;
+    animation: enter 2s ease-in-out;
+}
+.btn-strikers{
+    animation: enter 2s ease-in-out;
 }
 @media (max-width:768px) {
     .classification-group {
@@ -393,10 +485,13 @@ body {
     .team p {
         width: 25px;
         font-size: 11px;
-
+    }
+    .strikers{
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
     }
     
-
 }
 
 @media (max-width:425px) {
@@ -420,6 +515,11 @@ body {
     .container .groups{
     margin: 20px 0 20px 0;
     }
+    .strikers .player{
+        width: 100vw;
+        margin: 0;
+        
+    }
 }
 
 @media (max-width:400px) {
@@ -427,5 +527,11 @@ body {
     .navigation h2 {
         font-size: 14px;  
     }
-    
+    .games .round{
+        width: 100vw;
+    }
+    .round .confette{
+        width: 100%;
+        height: 145px;
+    }
 }
