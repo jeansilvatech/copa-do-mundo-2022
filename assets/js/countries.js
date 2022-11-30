@@ -10,11 +10,11 @@ export const time ={
     date:[],
     dateFinals:[]
  }
- 
+
 export const countries = {
         Catar:{
             name: "Catar",
-            code: "qa"
+            code: "qa",
         
         },
         Equador:{

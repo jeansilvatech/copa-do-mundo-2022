@@ -1,349 +1,366 @@
 import { countries, groupTitle, language, teamTitle, time } from "./countries.js";
 import { goals } from "./goals.js";
 import { match } from "./matches.js";
-//  Páginas de grupos
- const groupA = document.querySelector('.group-a')
- const groupB = document.querySelector('.group-b')
- const groupC = document.querySelector('.group-c')
- const groupD = document.querySelector('.group-d')
- const groupE = document.querySelector('.group-e')
- const groupF = document.querySelector('.group-f')
- const groupG = document.querySelector('.group-g')
- const groupH = document.querySelector('.group-h')
 
-//  Botões de grupos
- const btnGroupA = document.querySelector('.btn-group-a')
- const btnGroupB = document.querySelector('.btn-group-b')
- const btnGroupC = document.querySelector('.btn-group-c')
- const btnGroupD = document.querySelector('.btn-group-d')
- const btnGroupE = document.querySelector('.btn-group-e')
- const btnGroupF = document.querySelector('.btn-group-f')
- const btnGroupG = document.querySelector('.btn-group-g')
- const btnGroupH = document.querySelector('.btn-group-h')
-
- const groups = document.querySelector('.groups')
- const games = document.querySelector('.games')
-
- export const btnGames = document.querySelector('.title-games')
- export const btnCountries = document.querySelector('.title-countries')
- export const btnClassification = document.querySelector('.title-classification')
- const btnAbout = document.querySelector('.title-about');
-
- const groupsName = document.querySelector('.groups-name')
- const roundsHeader = document.querySelector('.rounds')
- 
- export const btnRound1 = document.querySelector('.btn-round1')
- export const btnRound2 = document.querySelector('.btn-round2')
- export const btnRound3 = document.querySelector('.btn-round3')
- export const btnRoundFinal= document.querySelector('.btn-round-final')
-// Páginas
- const round1 = document.querySelector('.round1')
- const round2 = document.querySelector('.round2')
- const round3= document.querySelector('.round3')
- const roundFinal = document.querySelector('.round-final')
- const about = document.querySelector('.about')
-export const btnStrikers = document.querySelector('.btn-strikers')
-const btnClassificationBack = document.querySelector('.back-classification')
- const strikers = document.querySelector('.strikers')
-
+const groupsName = document.querySelector('.groups-name')
+const roundsHeader = document.querySelector('.rounds')
 const goalsHeader = document.querySelector('.goals')
+//  Botões de grupos
+const btnGroupA = document.querySelector('.btn-group-a')
+const btnGroupB = document.querySelector('.btn-group-b')
+const btnGroupC = document.querySelector('.btn-group-c')
+const btnGroupD = document.querySelector('.btn-group-d')
+const btnGroupE = document.querySelector('.btn-group-e')
+const btnGroupF = document.querySelector('.btn-group-f')
+const btnGroupG = document.querySelector('.btn-group-g')
+const btnGroupH = document.querySelector('.btn-group-h')
+
+ //  Páginas de grupos
+const groupA = document.querySelector('.group-a')
+const groupB = document.querySelector('.group-b')
+const groupC = document.querySelector('.group-c')
+const groupD = document.querySelector('.group-d')
+const groupE = document.querySelector('.group-e')
+const groupF = document.querySelector('.group-f')
+const groupG = document.querySelector('.group-g')
+const groupH = document.querySelector('.group-h')
+ 
+export const btnCountries = document.querySelector('.title-countries')
+const groups = document.querySelector('.groups')
+ 
+export const btnGames = document.querySelector('.title-games')
+const games = document.querySelector('.games')
+export const btnRound1 = document.querySelector('.btn-round1')
+export const btnRound2 = document.querySelector('.btn-round2')
+export const btnRound3 = document.querySelector('.btn-round3')
+export const btnRoundFinal= document.querySelector('.btn-round-final')
+ 
+const round1 = document.querySelector('.round1')
+const round2 = document.querySelector('.round2')
+const round3= document.querySelector('.round3')
+const roundFinal = document.querySelector('.round-final')
+export const btnClassification = document.querySelector('.title-classification')
+const classification = document.querySelector('.classification')
+
+const btnAbout = document.querySelector('.title-about');
+const about = document.querySelector('.about')
+
+export const btnStrikers = document.querySelector('.btn-strikers')
+const strikers = document.querySelector('.strikers')
+const btnClassificationBack = document.querySelector('.back-classification')
+
 const btnRoundArrow = document.querySelector('.btn-round-arrow')
 const btnRoundArrowBack = document.querySelector('.btn-round-arrow-back')
-const classification = document.querySelector('.classification')
+
+const template ={
+    BG: '#006400',
+    BG_NONE: 'transparent',
+    COLOR: '#ffffff',
+    SHOW: 'flex',
+    NONE: 'none',
+    BORDER_WHITE: '4px solid white',
+    BORDER_NONE: '4px solid transparent'
+     
+}
 
 const flagUrl = '/assets/img/flags/'
 language();
-btnCountries.style.borderBottom = '4px solid white'
-btnGames.style.borderBottom = '4px solid transparent'
-btnClassification.style.borderBottom = '4px solid transparent'
-btnAbout.style.borderBottom = '4px solid transparent'
-btnRound2.style.backgroundColor = 'green'
+btnCountries.style.borderBottom = template.BORDER_WHITE
+btnGames.style.borderBottom = template.BORDER_NONE
+btnClassification.style.borderBottom = template.BORDER_NONE
+btnAbout.style.borderBottom = template.BORDER_NONE
+btnRound3.style.backgroundColor = template.BG
 
 btnRoundArrow.addEventListener('click', ()=>{
-    btnRound1.style.display= 'none';
-    btnRound2.style.display= 'none';
-    btnRound3.style.display= 'none';
-    btnRoundFinal.style.display= 'flex';
-    btnRoundArrowBack.style.display= 'flex';
-    btnRoundArrow.style.display = 'none';
+    btnRound1.style.display= template.NONE;
+    btnRound2.style.display= template.NONE;
+    btnRound3.style.display= template.NONE;
+    btnRoundFinal.style.display= template.SHOW;
+    btnRoundArrowBack.style.display= template.SHOW;
+    btnRoundArrow.style.display = template.NONE;
 })
 btnRoundArrowBack.addEventListener('click', ()=>{
-    btnRound1.style.display= 'flex';
-    btnRound2.style.display= 'flex';
-    btnRound3.style.display= 'flex';
-    btnRoundFinal.style.display= 'none';
-    btnRoundArrow.style.display = 'flex';
-    btnRoundArrowBack.style.display= 'none';
+    btnRound1.style.display= template.SHOW;
+    btnRound2.style.display= template.SHOW;
+    btnRound3.style.display= template.SHOW;
+    btnRoundFinal.style.display= template.NONE;
+    btnRoundArrow.style.display = template.SHOW;
+    btnRoundArrowBack.style.display= template.NONE;
 })
 
 btnCountries.addEventListener('click', ()=>{
-    btnGames.style.borderBottom = '4px solid transparent'
-    btnCountries.style.borderBottom = '4px solid white'
-    btnClassification.style.borderBottom = '4px solid transparent'
-    groups.style.display= 'flex'
-    games.style.display= 'none'
-    classification.style.display = 'none'
-    about.style.display = 'none';
-    roundsHeader.style.display = 'none'
-    groupsName.style.display = 'flex'
-    btnAbout.style.color = '#fff'
-    goalsHeader.style.display = 'none'
-    strikers.style.display = 'none';
-    btnStrikers.style.backgroundColor = 'transparent';
+    btnGames.style.borderBottom = template.BORDER_NONE
+    btnCountries.style.borderBottom = template.BORDER_WHITE
+    btnClassification.style.borderBottom = template.BORDER_NONE
+    groups.style.display= template.SHOW
+    games.style.display= template.NONE
+    classification.style.display = template.NONE
+    about.style.display = template.NONE
+    roundsHeader.style.display = template.NONE
+    groupsName.style.display = template.SHOW
+    btnAbout.style.color = template.COLOR
+    goalsHeader.style.display = template.NONE
+    strikers.style.display = template.NONE
+    btnStrikers.style.backgroundColor = template.BG_NONE;
+    btnClassificationBack.style.display =template.NONE
 
 })
 btnGames.addEventListener('click', ()=>{
-    btnGames.style.borderBottom = '4px solid white'
-    btnCountries.style.borderBottom = '4px solid transparent'
-    btnClassification.style.borderBottom = '4px solid transparent'
-    groups.style.display= 'none'
-    games.style.display= 'flex'
-    classification.style.display = 'none'
-    about.style.display = 'none';
-    groupsName.style.display ='none'
-    roundsHeader.style.display = 'flex'
-    btnAbout.style.color = '#fff'
-    goalsHeader.style.display = 'none'
-    strikers.style.display = 'none';
-    btnStrikers.style.backgroundColor = 'transparent';
+    btnGames.style.borderBottom = template.BORDER_WHITE
+    btnCountries.style.borderBottom = template.BORDER_NONE
+    btnClassification.style.borderBottom = template.BORDER_NONE
+    groups.style.display= template.NONE
+    games.style.display= template.SHOW
+    classification.style.display = template.NONE
+    about.style.display = template.NONE;
+    groupsName.style.display =template.NONE
+    roundsHeader.style.display = template.SHOW
+    btnAbout.style.color = template.COLOR
+    goalsHeader.style.display = template.NONE
+    strikers.style.display = template.NONE;
+    btnStrikers.style.backgroundColor = template.BG_NONE;
+    btnClassificationBack.style.display =template.NONE
 })
 btnClassification.addEventListener('click', ()=>{
-    btnClassification.style.borderBottom = '4px solid white'
-    btnGames.style.borderBottom = '4px solid transparent'
-    btnCountries.style.borderBottom = '4px solid transparent'
-    groups.style.display= 'none'
-    games.style.display= 'none'
-    classification.style.display = 'flex'
-    about.style.display = 'none';
-    groupsName.style.display ='none'
-    roundsHeader.style.display = 'none'
-    btnAbout.style.color = '#fff'
-    goalsHeader.style.display = 'flex'
-    strikers.style.display = 'none';
-    btnStrikers.style.backgroundColor = 'transparent';
+    btnClassification.style.borderBottom = template.BORDER_WHITE
+    btnGames.style.borderBottom = template.BORDER_NONE
+    btnCountries.style.borderBottom = template.BORDER_NONE
+    groups.style.display= template.NONE
+    games.style.display= template.NONE
+    classification.style.display = template.SHOW
+    about.style.display = template.NONE;
+    groupsName.style.display =template.NONE
+    roundsHeader.style.display = template.NONE
+    btnAbout.style.color = template.COLOR
+    goalsHeader.style.display = template.SHOW
+    strikers.style.display = template.NONE;
+    btnStrikers.style.backgroundColor = template.BG_NONE;
+    btnClassificationBack.style.display =template.NONE
 })
 
 btnAbout.addEventListener('click', ()=>{
     btnAbout.style.color = '#006400'
-    btnGames.style.borderBottom = '4px solid transparent'
-    btnCountries.style.borderBottom = '4px solid transparent'
-    btnClassification.style.borderBottom = '4px solid transparent'
-    groups.style.display= 'none'
-    games.style.display= 'none'
-    classification.style.display = 'none'
-    groupsName.style.display ='none'
-    roundsHeader.style.display = 'none'
-    groupsName.style.display ='none'
-    roundsHeader.style.display = 'none'
-    about.style.display = 'flex';
-    goalsHeader.style.display = 'none'
-    strikers.style.display = 'none';
-    btnStrikers.style.backgroundColor = 'transparent';
+    btnGames.style.borderBottom = template.BORDER_NONE
+    btnCountries.style.borderBottom = template.BORDER_NONE
+    btnClassification.style.borderBottom = template.BORDER_NONE
+    groups.style.display= template.NONE
+    games.style.display= template.NONE
+    classification.style.display = template.NONE
+    groupsName.style.display =template.NONE
+    roundsHeader.style.display = template.NONE
+    groupsName.style.display =template.NONE
+    roundsHeader.style.display = template.NONE
+    about.style.display = template.SHOW;
+    goalsHeader.style.display = template.NONE
+    strikers.style.display = template.NONE;
+    btnStrikers.style.backgroundColor = template.BG_NONE;
+    btnClassificationBack.style.display =template.NONE
 })
 btnStrikers.addEventListener('click', ()=>{
-    btnStrikers.style.backgroundColor = '#006400';
-    strikers.style.display = 'flex';
-    classification.style.display= 'none';
-    btnClassificationBack.style.display ='flex'
+    btnStrikers.style.backgroundColor = template.BG;
+    strikers.style.display = template.SHOW;
+    classification.style.display= template.NONE;
+    btnClassificationBack.style.display =template.SHOW
     
 })
 btnClassificationBack.addEventListener('click', ()=>{
-    btnStrikers.style.backgroundColor = 'transparent';
-    strikers.style.display = 'none';
-    classification.style.display= 'flex';
-    btnClassificationBack.style.display ='none'
+    btnStrikers.style.backgroundColor = template.BG_NONE;
+    strikers.style.display = template.NONE;
+    classification.style.display= template.SHOW;
+    btnClassificationBack.style.display =template.NONE
 })
 btnGroupA.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = '#006400'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'flex';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.SHOW;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupB.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = '#006400'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'flex';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.SHOW;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
+
 btnGroupC.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = '#006400'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'flex';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.SHOW;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupD.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = '#006400'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'flex';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.SHOW;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupE.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = '#006400'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'flex';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.SHOW;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupF.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = '#006400'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'flex';
-    groupG.style.display = 'none';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.SHOW;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupG.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = '#006400'
-    btnGroupH.style.backgroundColor = 'transparent'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'flex';
-    groupH.style.display = 'none';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG
+    btnGroupH.style.backgroundColor = template.BG_NONE
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.SHOW;
+    groupH.style.display = template.NONE;
 
 })
 btnGroupH.addEventListener('click', ()=>{
-    btnGroupA.style.backgroundColor = 'transparent'
-    btnGroupB.style.backgroundColor = 'transparent'
-    btnGroupC.style.backgroundColor = 'transparent'
-    btnGroupD.style.backgroundColor = 'transparent'
-    btnGroupE.style.backgroundColor = 'transparent'
-    btnGroupF.style.backgroundColor = 'transparent'
-    btnGroupG.style.backgroundColor = 'transparent'
-    btnGroupH.style.backgroundColor = '#006400'
-    groupA.style.display = 'none';
-    groupB.style.display = 'none';
-    groupC.style.display = 'none';
-    groupD.style.display = 'none';
-    groupE.style.display = 'none';
-    groupF.style.display = 'none';
-    groupG.style.display = 'none';
-    groupH.style.display = 'flex';
+    btnGroupA.style.backgroundColor = template.BG_NONE
+    btnGroupB.style.backgroundColor = template.BG_NONE
+    btnGroupC.style.backgroundColor = template.BG_NONE
+    btnGroupD.style.backgroundColor = template.BG_NONE
+    btnGroupE.style.backgroundColor = template.BG_NONE
+    btnGroupF.style.backgroundColor = template.BG_NONE
+    btnGroupG.style.backgroundColor = template.BG_NONE
+    btnGroupH.style.backgroundColor = template.BG
+    groupA.style.display = template.NONE;
+    groupB.style.display = template.NONE;
+    groupC.style.display = template.NONE;
+    groupD.style.display = template.NONE;
+    groupE.style.display = template.NONE;
+    groupF.style.display = template.NONE;
+    groupG.style.display = template.NONE;
+    groupH.style.display = template.SHOW;
 
 })
 btnRound1.addEventListener('click', ()=>{
-    btnRound1.style.backgroundColor = '#006400'
-    btnRound2.style.backgroundColor = 'transparent'
-    btnRound3.style.backgroundColor = 'transparent'
-    btnRoundFinal.style.backgroundColor = 'transparent';
-    round1.style.display = 'flex'
-    round2.style.display = 'none'
-    round3.style.display = 'none'
-    roundFinal.style.display = 'none'
+    btnRound1.style.backgroundColor = template.BG
+    btnRound2.style.backgroundColor = template.BG_NONE
+    btnRound3.style.backgroundColor = template.BG_NONE
+    btnRoundFinal.style.backgroundColor = template.BG_NONE;
+    round1.style.display = template.SHOW
+    round2.style.display = template.NONE
+    round3.style.display = template.NONE
+    roundFinal.style.display = template.NONE
 })
 btnRound2.addEventListener('click', ()=>{
-    btnRound2.style.backgroundColor = '#006400'
-    btnRound1.style.backgroundColor = 'transparent'
-    btnRound3.style.backgroundColor = 'transparent'
-    btnRoundFinal.style.backgroundColor = 'transparent';
-    round1.style.display = 'none'
-    round3.style.display = 'none'
-    roundFinal.style.display = 'none'
-    round2.style.display = 'flex'
+    btnRound2.style.backgroundColor = template.BG
+    btnRound1.style.backgroundColor = template.BG_NONE
+    btnRound3.style.backgroundColor = template.BG_NONE
+    btnRoundFinal.style.backgroundColor = template.BG_NONE;
+    round1.style.display = template.NONE
+    round3.style.display = template.NONE
+    roundFinal.style.display = template.NONE
+    round2.style.display = template.SHOW
 })
 btnRound3.addEventListener('click', ()=>{
-    btnRound3.style.backgroundColor = '#006400'
-    btnRound1.style.backgroundColor = 'transparent'
-    btnRound2.style.backgroundColor = 'transparent'
-    btnRoundFinal.style.backgroundColor = 'transparent';
-    round1.style.display = 'none'
-    round2.style.display = 'none'
-    roundFinal.style.display = 'none'
-    round3.style.display = 'flex'
+    btnRound3.style.backgroundColor = template.BG
+    btnRound1.style.backgroundColor = template.BG_NONE
+    btnRound2.style.backgroundColor = template.BG_NONE
+    btnRoundFinal.style.backgroundColor = template.BG_NONE;
+    round1.style.display = template.NONE
+    round2.style.display = template.NONE
+    roundFinal.style.display = template.NONE
+    round3.style.display = template.SHOW
 })
 btnRoundFinal.addEventListener('click', ()=>{
-    btnRoundFinal.style.backgroundColor = '#006400';
-    btnRound1.style.backgroundColor = 'transparent'
-    btnRound2.style.backgroundColor = 'transparent'
-    btnRound3.style.backgroundColor = 'transparent'
-    roundFinal.style.display = 'flex'
-    round1.style.display = 'none'
-    round2.style.display = 'none'
-    round3.style.display = 'none'
+    btnRoundFinal.style.backgroundColor = template.BG
+    btnRound1.style.backgroundColor = template.BG_NONE
+    btnRound2.style.backgroundColor = template.BG_NONE
+    btnRound3.style.backgroundColor = template.BG_NONE
+    roundFinal.style.display = template.SHOW
+    round1.style.display = template.NONE
+    round2.style.display = template.NONE
+    round3.style.display = template.NONE
 })
 
     groupA.innerHTML = `
@@ -1103,6 +1120,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             </div>
 
             <div class="round green">
+            <img class="confette" src="./assets/img/confetti.gif" alt="">
                 <div class="game">
                     <div class="countries-game">
                         <img class="flag-game" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
@@ -1472,8 +1490,8 @@ btnRoundFinal.addEventListener('click', ()=>{
     <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[0]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
+            <p>${countries.Holanda.name}</p>
         </div>
 
         <div class="versus">
@@ -1481,8 +1499,8 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
 
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[3]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.EstadosUnidos.code}.svg" alt="">
+            <p>${countries.EstadosUnidos.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1503,7 +1521,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[6]}</p>
+            <p>${countries.Default.name[7]}</p>
         </div>
     </div>
     <div class="date">
@@ -1558,15 +1576,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[2]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Inglaterra.code}.svg" alt="">
+            <p>${countries.Inglaterra.name}</p>
         </div>
         <div class="versus">
             <p>${match[53]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[1]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Senegal.code}.svg" alt="">
+            <p>${countries.Senegal.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1802,7 +1820,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
     <div class="date">
         <p class="gold">Final</p>
-        <p>${time.date[9]}</p>
+        <p>${time.dateFinals[9]}</p>
         <p>${time.hour[2]}</p>
         
     </div>
@@ -1859,19 +1877,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     </div>
     <div class="team">
         <p class="teams-name team-first">1 ${holanda}</p>
-        <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>3</p> <p>1</p> <p>2</p>
+        <p>7</p> <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>5</p> <p>1</p> <p>4</p>
     </div>
     <div class="team">
-        <p class="teams-name team-secondary">2 ${equador}</p>
-        <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>3</p> <p>1</p> <p>2</p>
+        <p class="teams-name team-secondary">2 ${senegal}</p>
+        <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>5</p> <p>4</p> <p>1</p>
     </div>
     <div class="team">
-        <p class="teams-name">3 ${senegal}</p>
-        <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>3</p> <p>3</p> <p>0</p>
+        <p class="teams-name">3 ${equador}</p>
+        <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>4</p> <p>3</p> <p>1</p>
     </div>
     <div class="team">
         <p class="teams-name">4 ${catar}</p>
-        <p>0</p> <p>2</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>5</p> <p>-4</p>
+        <p>0</p> <p>3</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>7</p> <p>-6</p>
     </div>
 </div>
 
@@ -1885,19 +1903,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1 ${inglaterra}</p>
-    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>6</p> <p>2</p> <p>4</p>
+    <p>7</p> <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>9</p> <p>2</p> <p>7</p>
 </div>
 <div class="team">
-    <p class="teams-name team-secondary">2 ${ira}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>4</p> <p>6</p> <p>-2</p>
+    <p class="teams-name team-secondary">2 ${eua}</p>
+    <p>5</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>2</p> <p>1</p> <p>1</p>
 </div>
 <div class="team">
-    <p class="teams-name">3 ${eua}</p>
-    <p>2</p> <p>2</p> <p>0</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>0</p>
+    <p class="teams-name">3 ${ira}</p>
+    <p>3</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>4</p> <p>7</p> <p>-3</p>
 </div>
 <div class="team">
     <p class="teams-name">4 ${gales}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>1</p> <p>3</p> <p>-2</p>
+    <p>1</p> <p>3</p> <p>0</p> <p>1</p> <p>2</p> <p>1</p> <p>6</p> <p>-5</p>
 </div>
 </div>
 
@@ -1963,19 +1981,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${espanha}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>7</p> <p>0</p> <p>7</p>
+    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>8</p> <p>1</p> <p>7</p>
 </div>
 <div class="team">
 <p class="teams-name team-secondary">2${japao}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>1</p>
+    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>2</p> <p>2</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">3${alemanha}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>-1</p>
+    <p class="teams-name">3${costaRica}</p>
+    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>7</p> <p>-6</p>
 </div>
 <div class="team">
-    <p class="teams-name">4${costaRica}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>7</p> <p>-7</p>
+    <p class="teams-name">4${alemanha}</p>
+    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
 </div>
 </div>
 
@@ -1988,20 +2006,20 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     <p>P</p> <p>PJ</p> <p>V</p> <p>E</p> <p>D</p> <p>GM</p> <p>GC</p> <p>SG</p>
 </div>
 <div class="team">
-    <p class="teams-name team-first">1${belgica}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>1</p>
+    <p class="teams-name team-first">1${croacia}</p>
+    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>4</p> <p>1</p> <p>3</p>
 </div>
 <div class="team">
     <p class="teams-name team-secondary">2${marrocos}</p>
-    <p>1</p> <p>1</p> <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>0</p> <p>0</p>
+    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>0</p> <p>2</p>
 </div>
 <div class="team">
-<p class="teams-name">3${croacia}</p>
-    <p>1</p> <p>1</p> <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>0</p> <p>0</p>
+    <p class="teams-name">3${belgica}</p>
+    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>-1</p>
 </div>
 <div class="team">
     <p class="teams-name">4${canada}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>1</p> <p>-1</p>
+    <p>0</p> <p>2</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>5</p> <p>-4</p>
 </div>
 </div>
 
@@ -2015,19 +2033,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${brasil}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>2</p> <p>0</p> <p>0</p>
+    <p>6</p> <p>2</p> <p>2</p> <p>0</p> <p>0</p> <p>3</p> <p>0</p> <p>3</p>
 </div>
 <div class="team">
     <p class="teams-name team-secondary">2${suica}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>1</p>
+    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>1</p> <p>0</p>
 </div>
 <div class="team">
     <p class="teams-name">3${camaroes}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>1</p> <p>-1</p>
+    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>3</p> <p>4</p> <p>-1</p>
 </div>
 <div class="team">
     <p class="teams-name">4${servia}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>0</p> <p>2</p> <p>-2</p>
+    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>3</p> <p>5</p> <p>-2</p>
 </div>
 </div>
 
@@ -2041,19 +2059,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${portugal}</p>
-    <p>3</p> <p>1</p> <p>1</p> <p>0</p> <p>0</p> <p>3</p> <p>2</p> <p>1</p>
+    <p>6</p> <p>2</p> <p>2</p> <p>0</p> <p>0</p> <p>5</p> <p>2</p> <p>3</p>
 </div>
 <div class="team">
-    <p class="teams-name team-secondary">2${coreiaDoSul}</p>
-    <p>1</p> <p>1</p> <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>0</p> <p>0</p>
+    <p class="teams-name team-secondary">2${gana}</p>
+    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>5</p> <p>5</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">3${uruguai}</p>
-    <p>1</p> <p>1</p> <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>0</p> <p>0</p>
+    <p class="teams-name">3${coreiaDoSul}</p>
+    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
 </div>
 <div class="team">
-    <p class="teams-name">4${gana}</p>
-    <p>0</p> <p>1</p> <p>0</p> <p>0</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
+    <p class="teams-name">4${uruguai}</p>
+    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>-2</p>
 </div>
 </div>
 
@@ -2077,31 +2095,36 @@ about.innerHTML = `
             </div>
 
             <div class="footer">
-            <p>Gostou e quer fazer uma contribuição?</p>
+            <p>Para doações</p>
+            <i class="fa-brands fa-pix"></i>
             <img src="./assets/img/qrcode-pix.png" alt="">
             <h4 class="code-pix">Copiar Código</h4>
-            <i class="fa-brands fa-pix"></i>
             <p>Copyright © <span></span></p>
             </div>
         </div>
 `
 
-for(let i=0; i <= goals.length; i++){
+ for(let i=0; i <= goals.length; i++){
     goals.sort(function(x,y){
         return y.goal - x.goal;
     })
-    strikers.innerHTML = strikers.innerHTML + `
-    <div class="player">
-            <img src="${flagUrl}${goals[i].country}.svg" alt="" class="flag-player">
-            <div class="name">
-            <h2 class="player-name">${goals[i].name}</h2>
-            <span>${goals[i].position}</span>
+    try{
+        strikers.innerHTML = strikers.innerHTML + `
+        <div class="player">
+                <img src="${flagUrl}${goals[i].country}.svg" alt="" class="flag-player">
+                <div class="name">
+                <h2 class="player-name">${goals[i].name}</h2>
+                <span>${goals[i].position}</span>
+                </div>
+                <img class="goals-icon" src="./assets/img/goal.svg" alt="">
+                <p class="player-goals">${goals[i].goal}</p>
+                
             </div>
-            <img class="goals-icon" src="./assets/img/goal.png" alt="">
-            <p class="player-goals">${goals[i].goal}</p>
-            
-        </div>
-    `
+        `
+    }catch{
+        console.log('Olá, muito obrigado pela visita! | Hello, thank you very much for visiting! | ¡Hola, muchas gracias por visitarnos! 😁')
+    }
+    
 }
 
 
@@ -2118,7 +2141,7 @@ setTimeout(() => {
     btnCodePix.style.color = '#1c1c1c'
 }, 3000);
 btnCodePix.innerText = 'Copiado!'
-btnCodePix.style.backgroundColor = '#006400'
-btnCodePix.style.color = 'white'
+btnCodePix.style.backgroundColor = template.BG
+btnCodePix.style.color = template.COLOR
         
 })

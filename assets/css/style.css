@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     padding: 0;
@@ -11,7 +10,7 @@
 body {
     background-color: #1c1c1c;
     color: white;
-    font-family:'Josefin Sans','Roboto', sans-serif;
+    font-family:'Josefin Sans', sans-serif;
     overflow-x: hidden;
 }
 
@@ -65,6 +64,7 @@ body {
 
 .logo img {
     width: 40px;
+    height: 80px;
 }
 
 .groups-name h2,
@@ -192,7 +192,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     animation: enter 2s ease-in-out;
-    /* padding-bottom: 20px; */
 }
 
 .round .date {
@@ -234,7 +233,7 @@ body {
 }
 
 .round1,
-.round3,
+.round2,
 .round-final {
     display: none;
 }
@@ -302,7 +301,6 @@ body {
     align-items: center;
     border-left: 2px solid transparent;
 }
-
 .team-first,
 .team-secondary {
     border-left: 2px solid #006400;
@@ -320,6 +318,25 @@ body {
     }
     100%{
         border-left: 2px solid #006400;
+    }
+}
+
+@keyframes button {
+    0%{
+        border-bottom: 4px solid #006400;
+        color:#006400 ;
+    }
+    50%{
+        border-bottom: 4px solid  #1E90FF;
+        color:#1E90FF ;
+    }
+    75%{
+        border-bottom: 4px solid  #FFFF00;
+        color:#FFFF00 ;
+    }
+    100%{
+        border-bottom: 4px solid #006400;
+        color:#006400;
     }
 }
 .team .flag-classification {
@@ -386,6 +403,9 @@ body {
 }
 .container-about .social{
     margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #808080;
+    border-radius: 1px;
 }
 .container-about .social a {
     text-decoration: none;
@@ -444,6 +464,11 @@ body {
     justify-content: center;
     margin-right: 10px;
 }
+.strikers .player:hover,
+.classification-group .team:hover
+{
+    background-color: rgba(0, 0, 0, 0.15);
+}
 .player .flag-player{
     width: 30px;
     height: 20px;
@@ -455,6 +480,9 @@ body {
     font-size: 15px;
    margin-left: 10px;
    
+}
+.player span{
+    color: #808080;
 }
 .player .goals-icon{
     width: 20px;

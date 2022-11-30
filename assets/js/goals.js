@@ -4,277 +4,428 @@ export const goals =[
     {
         name: "Enner Valencia",
         position:"AT",
-        country: countries.Equador.code,
+        country: `${countries.Equador.code}`,
         goal: 3
     },
     {
         name: "Taremi",
         position:"AT",
-        country: countries.Ira.code,
+        country: `${countries.Ira.code}`,
         goal: 2
     },
     {
         name: "Saka",
         position:"MC",
-        country: countries.Inglaterra.code,
+        country: `${countries.Inglaterra.code}`,
         goal: 2
     },
     {
         name: "Grealish",
         position:"MC",
-        country: countries.Inglaterra.code,
+        country: `${countries.Inglaterra.code}`,
         goal: 1
     },
     {
         name: "Rashford",
         position:"AT",
-        country: countries.Inglaterra.code,
-        goal: 1
+        country: `${countries.Inglaterra.code}`,
+        goal: 3
     },
     {
         name: "Bellingham",
         position:"MC",
-        country: countries.Inglaterra.code,
+        country: `${countries.Inglaterra.code}`,
         goal: 1
     },
     {
         name: "Sterling",
         position:"AT",
-        country: countries.Inglaterra.code,
+        country: `${countries.Inglaterra.code}`,
         goal: 1
     },
     {
         name: "Klassen",
         position:"MC",
-        country: countries.Holanda.code,
+        country: `${countries.Holanda.code}`,
         goal: 1
     },
     {
         name: "Gakpo",
         position:"AT",
-        country: countries.Holanda.code,
-        goal: 2
+        country: `${countries.Holanda.code}`,
+        goal: 3
     },
     {
         name: "Bale",
         position:"AT",
-        country: countries.Gales.code,
+        country: `${countries.Gales.code}`,
         goal: 1
     },
     {
         name: "Weah",
         position:"AT",
-        country: countries.EstadosUnidos.code,
+        country: `${countries.EstadosUnidos.code}`,
         goal: 1
     },
     {
         name: "Salem Al-Dawsari",
         position:"AT",
-        country: countries.ArabiaSaudita.code,
+        country: `${countries.ArabiaSaudita.code}`,
         goal: 1
     },
     {
         name: "Al-Shehri",
         position:"AT",
-        country: countries.ArabiaSaudita.code,
+        country: `${countries.ArabiaSaudita.code}`,
         goal: 1
     },
     {
         name: "Messi",
         position:"AT",
-        country: countries.Argentina.code,
+        country:`${countries.Argentina.code}`,
         goal: 2
     },
     {
         name: "Ferrán Torres",
         position:"AT",
-        country: countries.Espanha.code,
+        country: `${countries.Espanha.code}`,
         goal: 2
     },
     {
         name: "Richarlison",
         position:"AT",
-        country: countries.Brasil.code,
+        country: `${countries.Brasil.code}`,
         goal: 2
     },
     {
         name: "Giroud",
         position:"AT",
-        country: countries.Franca.code,
+        country: `${countries.Franca.code}`,
         goal: 2
     },
     {
         name: "Muntari",
         position:"AT",
-        country: countries.Catar.code,
+        country: `${countries.Catar.code}`,
         goal: 1
     },
     {
         name: "Asensio",
         position:"AT",
-        country: countries.Espanha.code,
+        country: `${countries.Espanha.code}`,
         goal: 1
     },
     {
         name: "Dani Olmo",
         position:"MC",
-        country: countries.Espanha.code,
+        country: `${countries.Espanha.code}`,
         goal: 1
     },
     {
         name: "Batshuayi",
         position:"AT",
-        country: countries.Belgica.code,
+        country: `${countries.Belgica.code}`,
         goal: 1
     },
     {
         name: "Embolo",
         position:"AT",
-        country: countries.Suica.code,
+        country: `${countries.Suica.code}`,
         goal: 1
     },
     {
         name: "Diédhiou",
         position:"AT",
-        country: countries.Senegal.code,
+        country: `${countries.Senegal.code}`,
         goal: 1
     },
     {
         name: "Bukari",
         position:"AT",
-        country: countries.Gana.code,
+        country: `${countries.Gana.code}`,
         goal: 1
     },
     {
         name: "Cheshmi",
         position:"MC",
-        country: countries.Ira.code,
+        country: `${countries.Ira.code}`,
         goal: 1
     },
     {
         name: "Rafael Leão",
         position:"AT",
-        country: countries.Portugal.code,
+        country: `${countries.Portugal.code}`,
         goal: 1
     },
     {
         name: "João Félix",
         position:"AT",
-        country: countries.Portugal.code,
+        country: `${countries.Portugal.code}`,
         goal: 1
     },
     {
         name: "Boulaye Dia",
         position:"AT",
-        country: countries.Senegal.code,
+        country: `${countries.Senegal.code}`,
         goal: 1
     },
     {
         name: "André Ayew",
         position:"AT",
-        country: countries.Gana.code,
+        country: `${countries.Gana.code}`,
         goal: 1
     },
     {
         name: "Cristiano Ronaldo",
         position:"AT",
-        country: countries.Portugal.code,
+        country: `${countries.Portugal.code}`,
         goal: 1
     },
     {
         name: "Rezaeian",
         position:"LT",
-        country: countries.Ira.code,
+        country: `${countries.Ira.code}`,
         goal: 1
     },
     {
         name: "Bamba Dieng",
         position:"AT",
-        country: countries.Senegal.code,
+        country: `${countries.Senegal.code}`,
         goal: 1
     },
     {
         name: "Mbappé",
         position:"AT",
-        country: countries.Franca.code,
+        country: `${countries.Franca.code}`,
         goal: 3
     },
     {
         name: "Goodwin",
         position:"MC",
-        country: countries.Australia.code,
+        country: `${countries.Australia.code}`,
         goal: 1
     },
     {
         name: "Rabiot",
         position:"MC",
-        country: countries.Franca.code,
+        country: `${countries.Franca.code}`,
         goal: 1
     },
     {
         name: "Gavi",
         position:"MC",
-        country: countries.Espanha.code,
+        country: `${countries.Espanha.code}`,
         goal: 1
     },
     {
         name: "Asano",
         position:"AT",
-        country: countries.Japao.code,
+        country: `${countries.Japao.code}`,
         goal: 1
     },
     {
         name: "Doan",
         position:"AT",
-        country: countries.Japao.code,
+        country: `${countries.Japao.code}`,
         goal: 1
     },
     {
         name: "Gündogan",
         position:"MC",
-        country: countries.Alemanha.code,
+        country: `${countries.Alemanha.code}`,
         goal: 1
     },
     {
         name: "Morata",
         position:"AT",
-        country: countries.Espanha.code,
-        goal: 1
+        country: `${countries.Espanha.code}`,
+        goal: 2
     },
     {
         name: "Soler",
         position:"MC",
-        country: countries.Espanha.code,
+        country: `${countries.Espanha.code}`,
         goal: 1
     },
     {
         name: "Duke",
         position:"AT",
-        country: countries.Australia.code,
+        country: `${countries.Australia.code}`,
         goal: 1
     },
     {
         name: "Lewandowski",
         position:"AT",
-        country: countries.Polonia.code,
+        country: `${countries.Polonia.code}`,
         goal: 1
     },
     {
         name: "Zieliński",
         position:"MC",
-        country: countries.Polonia.code,
+        country: `${countries.Polonia.code}`,
         goal: 1
     },
     {
         name: "Christensen",
         position:"ZG",
-        country: countries.Dinamarca.code,
+        country: `${countries.Dinamarca.code}`,
         goal: 1
     },
     {
         name: "Enzo Fernández",
         position:"MC",
-        country: countries.Argentina.code,
+        country: `${countries.Argentina.code}`,
+        goal: 1
+    },
+    {
+        name: "Fuller",
+        position:"LT",
+        country: `${countries.CostaRica.code}`,
+        goal: 1
+    },
+    {
+        name: "Aboukhlal",
+        position:"AT",
+        country: `${countries.Marrocos.code}`,
+        goal: 1
+    },
+    {
+        name: "Sabiri",
+        position:"MC",
+        country: `${countries.Marrocos.code}`,
+        goal: 1
+    },
+    {
+        name: "Kramaric",
+        position:"AT",
+        country: `${countries.Croacia.code}`,
+        goal: 2
+        
+    },
+    {
+        name: "Davies",
+        position:"LT",
+        country: `${countries.Canada.code}`,
+        goal: 1
+    },
+    {
+        name: "Livaja",
+        position:"AT",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Majer",
+        position:"MC",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Füllkrug",
+        position:"AT",
+        country: `${countries.Alemanha.code}`,
+        goal: 1
+    },
+    {
+        name: "Castelletto",
+        position:"ZG",
+        country: `${countries.Camaroes.code}`,
+        goal: 1
+    },
+    {
+        name: "Aboubakar",
+        position:"AT",
+        country: `${countries.Camaroes.code}`,
+        goal: 1
+    },
+    {
+        name: "Choupo-Moting",
+        position:"AT",
+        country: `${countries.Camaroes.code}`,
+        goal: 1
+    },
+    {
+        name: "Pavlović",
+        position:"ZG",
+        country: `${countries.Servia.code}`,
+        goal: 1
+    },
+    {
+        name: "Mitrović",
+        position:"AT",
+        country: `${countries.Servia.code}`,
+        goal: 1
+    },
+    {
+        name: "Milinković-Savić",
+        position:"MC",
+        country: `${countries.Servia.code}`,
+        goal: 1
+    },
+    {
+        name: "Kudus",
+        position:"MC",
+        country: `${countries.Gana.code}`,
+        goal: 2
+    },
+    {
+        name: "Salisu",
+        position:"ZG",
+        country: `${countries.Gana.code}`,
+        goal: 1
+    },
+    {
+        name: "Cho",
+        position:"AT",
+        country: `${countries.CoreiaSul.code}`,
+        goal: 2
+    },
+    {
+        name: "Casemiro",
+        position:"MC",
+        country: `${countries.Brasil.code}`,
+        goal: 1
+    },
+    {
+        name: "Bruno Fernandes",
+        position:"MC",
+        country: `${countries.Portugal.code}`,
+        goal: 2
+    },
+    {
+        name: "Sarr",
+        position:"AT",
+        country: `${countries.Senegal.code}`,
+        goal: 1
+    },
+    {
+        name: "Koulibaly",
+        position:"ZG",
+        country: `${countries.Senegal.code}`,
+        goal: 1
+    },
+    {
+        name: "Caicedo",
+        position:"MC",
+        country: `${countries.Equador.code}`,
+        goal: 1
+    },
+    {
+        name: "F. De Jong",
+        position:"MC",
+        country: `${countries.Holanda.code}`,
+        goal: 1
+    },
+    {
+        name: "Pulisic",
+        position:"AT",
+        country: `${countries.EstadosUnidos.code}`,
+        goal: 1
+    },
+    {
+        name: "Foden",
+        position:"AT",
+        country: `${countries.Inglaterra.code}`,
         goal: 1
     },
 ]
