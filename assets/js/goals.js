@@ -71,7 +71,7 @@ export const goals =[
         name: "Salem Al-Dawsari",
         position:"AT",
         country: `${countries.ArabiaSaudita.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Al-Shehri",
@@ -428,4 +428,40 @@ export const goals =[
         country: `${countries.Inglaterra.code}`,
         goal: 1
     },
+    {
+        name: "Khazri",
+        position:"AT",
+        country: `${countries.Tunisia.code}`,
+        goal: 1
+    },
+    {
+        name: "Leckie",
+        position:"MC",
+        country: `${countries.Australia.code}`,
+        goal: 1
+    },
+    {
+        name: "Martín",
+        position:"AT",
+        country: `${countries.Mexico.code}`,
+        goal: 1
+    },
+    {
+        name: "Chávez",
+        position:"MC",
+        country: `${countries.Mexico.code}`,
+        goal: 1
+    },
+    {
+        name: "Mac Allister",
+        position:"MC",
+        country: `${countries.Argentina.code}`,
+        goal: 1
+    },
+    {
+        name: "J. Álvarez",
+        position:"AT",
+        country: `${countries.Argentina.code}`,
+        goal: 1
+    }
 ]

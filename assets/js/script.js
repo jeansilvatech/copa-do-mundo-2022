@@ -1513,15 +1513,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[4]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+            <p>${countries.Argentina.name}</p>
         </div>
         <div class="versus">
             <p>${match[50]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[7]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Australia.code}.svg" alt="">
+            <p>${countries.Australia.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1597,15 +1597,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[6]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Franca.code}.svg" alt="">
+            <p>${countries.Franca.name}</p>
         </div>
         <div class="versus">
             <p>${match[54]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[5]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Polonia.code}.svg" alt="">
+            <p>${countries.Polonia.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1928,20 +1928,20 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     <p>P</p> <p>PJ</p> <p>V</p> <p>E</p> <p>D</p> <p>GM</p> <p>GC</p> <p>SG</p>
 </div>
 <div class="team">
-    <p class="teams-name team-first">1 ${polonia}</p>
-    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>0</p> <p>2</p>
+    <p class="teams-name team-first">1 ${argentina}</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>5</p> <p>2</p> <p>3</p>
 </div>
 <div class="team">
-    <p class="teams-name team-secondary">2 ${argentina}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>3</p> <p>2</p> <p>1</p>
+    <p class="teams-name team-secondary">2 ${polonia}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>2</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">3 ${arabiaSaudita}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
+    <p class="teams-name">3 ${mexico}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
 </div>
 <div class="team">
-    <p class="teams-name">4 ${mexico}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>-2</p>
+    <p class="teams-name">4 ${arabiaSaudita}</p>
+    <p>3</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>3</p> <p>5</p> <p>-2</p>
 </div>
 </div>
 
@@ -1955,19 +1955,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${franca}</p>
-    <p>6</p> <p>2</p> <p>2</p> <p>0</p> <p>0</p> <p>6</p> <p>2</p> <p>4</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>6</p> <p>3</p> <p>3</p>
 </div>
 <div class="team">
     <p class="teams-name team-secondary">2${australia}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>2</p> <p>4</p> <p>-2</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>3</p> <p>4</p> <p>-1</p>
 </div>
 <div class="team">
-    <p class="teams-name">3${dinamarca}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>-1</p>
+    <p class="teams-name">3${tunisia}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>2</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">4${tunisia}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>0</p> <p>1</p> <p>-1</p>
+    <p class="teams-name">4${dinamarca}</p>
+    <p>1</p> <p>3</p> <p>0</p> <p>1</p> <p>2</p> <p>0</p> <p>2</p> <p>-2</p>
 </div>
 </div>
 
