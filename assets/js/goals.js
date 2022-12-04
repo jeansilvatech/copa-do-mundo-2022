@@ -83,7 +83,7 @@ export const goals =[
         name: "Messi",
         position:"AT",
         country:`${countries.Argentina.code}`,
-        goal: 2
+        goal: 3
     },
     {
         name: "Ferrán Torres",
@@ -131,7 +131,7 @@ export const goals =[
         name: "Embolo",
         position:"AT",
         country: `${countries.Suica.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Diédhiou",
@@ -227,7 +227,7 @@ export const goals =[
         name: "Doan",
         position:"AT",
         country: `${countries.Japao.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Gündogan",
@@ -239,7 +239,7 @@ export const goals =[
         name: "Morata",
         position:"AT",
         country: `${countries.Espanha.code}`,
-        goal: 2
+        goal: 3
     },
     {
         name: "Soler",
@@ -287,7 +287,7 @@ export const goals =[
         name: "Aboukhlal",
         position:"AT",
         country: `${countries.Marrocos.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Sabiri",
@@ -324,7 +324,7 @@ export const goals =[
         name: "Füllkrug",
         position:"AT",
         country: `${countries.Alemanha.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Castelletto",
@@ -354,7 +354,7 @@ export const goals =[
         name: "Mitrović",
         position:"AT",
         country: `${countries.Servia.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Milinković-Savić",
@@ -375,7 +375,7 @@ export const goals =[
         goal: 1
     },
     {
-        name: "Cho",
+        name: "Cho Gue-sung",
         position:"AT",
         country: `${countries.CoreiaSul.code}`,
         goal: 2
@@ -462,6 +462,108 @@ export const goals =[
         name: "J. Álvarez",
         position:"AT",
         country: `${countries.Argentina.code}`,
+        goal: 2
+    },
+    {
+        name: "Ziyech",
+        position:"AT",
+        country: `${countries.Marrocos.code}`,
         goal: 1
-    }
+    },
+    {
+        name: "En-Nesyri",
+        position:"AT",
+        country: `${countries.Marrocos.code}`,
+        goal: 1
+    },
+    {
+        name: "Tanaka",
+        position:"MC",
+        country: `${countries.Japao.code}`,
+        goal: 1
+    },
+    {
+        name: "Havertz",
+        position:"AT",
+        country: `${countries.Alemanha.code}`,
+        goal: 2
+    },
+    {
+        name: "Gnabry",
+        position:"AT",
+        country: `${countries.Alemanha.code}`,
+        goal: 1
+    },
+    {
+        name: "Tejeda",
+        position:"MC",
+        country: `${countries.CostaRica.code}`,
+        goal: 1
+    },
+    {
+        name: "De Arrascaeta",
+        position:"MC",
+        country: `${countries.Uruguai.code}`,
+        goal: 2
+    },
+    {
+        name: "Ricardo Horta",
+        position:"AT",
+        country: `${countries.Portugal.code}`,
+        goal: 1
+    },
+    {
+        name: "Hwang Hee-chan",
+        position:"AT",
+        country: `${countries.CoreiaSul.code}`,
+        goal: 1
+    },
+    {
+        name: "Kim Young-gwon",
+        position:"ZG",
+        country: `${countries.CoreiaSul.code}`,
+        goal: 1
+    },
+    {
+        name: "Vlahović",
+        position:"AT",
+        country: `${countries.Servia.code}`,
+        goal: 1
+    },
+    {
+        name: "Shaqiri",
+        position:"AT",
+        country: `${countries.Suica.code}`,
+        goal: 1
+    },
+    {
+        name: "Freuler",
+        position:"MC",
+        country: `${countries.Suica.code}`,
+        goal: 1
+    },
+    {
+        name: "Blind",
+        position:"LT",
+        country: `${countries.Holanda.code}`,
+        goal: 1
+    },
+    {
+        name: "Depay",
+        position:"AT",
+        country: `${countries.Holanda.code}`,
+        goal: 1
+    },
+    {
+        name: "Dumfries",
+        position:"LT",
+        country: `${countries.Holanda.code}`,
+        goal: 1
+    },
+    {
+        name: "Wright",
+        position:"AT",
+        country: `${countries.EstadosUnidos.code}`,
+        goal: 1
+    },
 ]

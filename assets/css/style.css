@@ -106,6 +106,7 @@ body {
 .container .flags {
     width: 90px;
     height: 57px;
+    object-fit: cover;
     animation: flag 2s ease-in-out;
 }
 
@@ -229,11 +230,12 @@ body {
     width: 50px;
     height: 30px;
     margin: 10px;
+    object-fit: cover;
 }
 
 .round1,
 .round2,
-.round-final {
+.round3 {
     display: none;
 }
 
@@ -246,7 +248,9 @@ body {
 .green {
     background-color: #006400;
 }
-
+.red{
+    background-color:darkred;
+}
 .green:hover {
     transform: scale(1.1);
 }
@@ -342,6 +346,7 @@ body {
     width: 20px;
     height: 15px;
     margin: 1px 5px;
+    object-fit: cover;
 }
 
 .btn-round-final,

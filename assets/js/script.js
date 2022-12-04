@@ -69,8 +69,18 @@ btnCountries.style.borderBottom = template.BORDER_WHITE
 btnGames.style.borderBottom = template.BORDER_NONE
 btnClassification.style.borderBottom = template.BORDER_NONE
 btnAbout.style.borderBottom = template.BORDER_NONE
-btnRound3.style.backgroundColor = template.BG
 
+function btnVisible(){
+    btnRoundFinal.style.backgroundColor = template.BG
+    btnRoundFinal.style.display = template.SHOW
+    btnRound1.style.display= template.NONE;
+    btnRound2.style.display= template.NONE;
+    btnRound3.style.display= template.NONE;
+    btnRoundArrowBack.style.display= template.SHOW;
+    btnRoundArrow.style.display = template.NONE;
+}
+
+btnVisible()
 btnRoundArrow.addEventListener('click', ()=>{
     btnRound1.style.display= template.NONE;
     btnRound2.style.display= template.NONE;
@@ -1465,7 +1475,7 @@ btnRoundFinal.addEventListener('click', ()=>{
                 </div>
             </div>
 
-            <div class="round green">
+            <div class="round red">
                 <div class="game">
                     <div class="countries-game">
                         <img class="flag-game" src="${flagUrl}${countries.Camaroes.code}.svg" alt="">
@@ -1499,7 +1509,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
 
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.EstadosUnidos.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.EstadosUnidos.code}.svg" alt="">
             <p>${countries.EstadosUnidos.name}</p>
         </div>
     </div>
@@ -1520,7 +1530,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[50]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Australia.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Australia.code}.svg" alt="">
             <p>${countries.Australia.name}</p>
         </div>
     </div>
@@ -1534,15 +1544,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[8]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Japao.code}.svg" alt="">
+            <p>${countries.Japao.name}</p>
         </div>
         <div class="versus">
             <p>${match[51]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[11]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Croacia.code}.svg" alt="">
+            <p>${countries.Croacia.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1552,18 +1562,18 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round green">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[12]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
+            <p>${countries.Brasil.name}</p>
         </div>
         <div class="versus">
             <p>${match[52]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[15]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.CoreiaSul.code}.svg" alt="">
+            <p>${countries.CoreiaSul.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1618,15 +1628,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[10]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Marrocos.code}.svg" alt="">
+            <p>${countries.Marrocos.name}</p>
         </div>
         <div class="versus">
             <p>${match[55]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[9]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Espanha.code}.svg" alt="">
+            <p>${countries.Espanha.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1639,15 +1649,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[14]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Portugal.code}.svg" alt="">
+            <p>${countries.Portugal.name}</p>
         </div>
         <div class="versus">
             <p>${match[56]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.name[13]}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Suica.code}.svg" alt="">
+            <p>${countries.Suica.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1660,15 +1670,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
+            <p>${countries.Holanda.name}</p>
         </div>
         <div class="versus">
             <p>${match[57]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+            <p>${countries.Argentina.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1889,7 +1899,7 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     </div>
     <div class="team">
         <p class="teams-name">4 ${catar}</p>
-        <p>0</p> <p>3</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>7</p> <p>-6</p>
+        <p>0</p> <p>3</p> <p>0</p> <p>0</p> <p>3</p> <p>1</p> <p>7</p> <p>-6</p>
     </div>
 </div>
 
@@ -1907,7 +1917,7 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-secondary">2 ${eua}</p>
-    <p>5</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>2</p> <p>1</p> <p>1</p>
+    <p>5</p> <p>3</p> <p>1</p> <p>2</p> <p>0</p> <p>2</p> <p>1</p> <p>1</p>
 </div>
 <div class="team">
     <p class="teams-name">3 ${ira}</p>
@@ -1980,20 +1990,20 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     <p>P</p> <p>PJ</p> <p>V</p> <p>E</p> <p>D</p> <p>GM</p> <p>GC</p> <p>SG</p>
 </div>
 <div class="team">
-    <p class="teams-name team-first">1${espanha}</p>
-    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>8</p> <p>1</p> <p>7</p>
+    <p class="teams-name team-first">1${japao}</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>4</p> <p>3</p> <p>1</p>
 </div>
 <div class="team">
-<p class="teams-name team-secondary">2${japao}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>2</p> <p>2</p> <p>0</p>
+<p class="teams-name team-secondary">2${espanha}</p>
+<p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>9</p> <p>3</p> <p>6</p>
 </div>
 <div class="team">
-    <p class="teams-name">3${costaRica}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>7</p> <p>-6</p>
+    <p class="teams-name">3${alemanha}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>6</p> <p>5</p> <p>1</p>
 </div>
 <div class="team">
-    <p class="teams-name">4${alemanha}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
+    <p class="teams-name">4${costaRica}</p>
+    <p>3</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>3</p> <p>11</p> <p>-8</p>
 </div>
 </div>
 
@@ -2006,20 +2016,20 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
     <p>P</p> <p>PJ</p> <p>V</p> <p>E</p> <p>D</p> <p>GM</p> <p>GC</p> <p>SG</p>
 </div>
 <div class="team">
-    <p class="teams-name team-first">1${croacia}</p>
-    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>4</p> <p>1</p> <p>3</p>
+    <p class="teams-name team-first">1${marrocos}</p>
+    <p>7</p> <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>4</p> <p>1</p> <p>3</p>
 </div>
 <div class="team">
-    <p class="teams-name team-secondary">2${marrocos}</p>
-    <p>4</p> <p>2</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>0</p> <p>2</p>
+    <p class="teams-name team-secondary">2${croacia}</p>
+    <p>5</p> <p>3</p> <p>1</p> <p>2</p> <p>0</p> <p>4</p> <p>1</p> <p>3</p>
 </div>
 <div class="team">
     <p class="teams-name">3${belgica}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>-1</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>-1</p>
 </div>
 <div class="team">
     <p class="teams-name">4${canada}</p>
-    <p>0</p> <p>2</p> <p>0</p> <p>0</p> <p>2</p> <p>1</p> <p>5</p> <p>-4</p>
+    <p>0</p> <p>3</p> <p>0</p> <p>0</p> <p>3</p> <p>2</p> <p>7</p> <p>-5</p>
 </div>
 </div>
 
@@ -2033,19 +2043,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${brasil}</p>
-    <p>6</p> <p>2</p> <p>2</p> <p>0</p> <p>0</p> <p>3</p> <p>0</p> <p>3</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>3</p> <p>1</p> <p>2</p>
 </div>
 <div class="team">
     <p class="teams-name team-secondary">2${suica}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>1</p> <p>1</p> <p>0</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>4</p> <p>3</p> <p>1</p>
 </div>
 <div class="team">
     <p class="teams-name">3${camaroes}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>3</p> <p>4</p> <p>-1</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>4</p> <p>4</p> <p>0</p>
 </div>
 <div class="team">
     <p class="teams-name">4${servia}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>3</p> <p>5</p> <p>-2</p>
+    <p>1</p> <p>3</p> <p>0</p> <p>1</p> <p>2</p> <p>5</p> <p>8</p> <p>-3</p>
 </div>
 </div>
 
@@ -2059,19 +2069,19 @@ const coreiaDoSul= `<img class="flag-classification" src="${flagUrl}${countries.
 </div>
 <div class="team">
     <p class="teams-name team-first">1${portugal}</p>
-    <p>6</p> <p>2</p> <p>2</p> <p>0</p> <p>0</p> <p>5</p> <p>2</p> <p>3</p>
+    <p>6</p> <p>3</p> <p>2</p> <p>0</p> <p>1</p> <p>6</p> <p>4</p> <p>2</p>
 </div>
 <div class="team">
-    <p class="teams-name team-secondary">2${gana}</p>
-    <p>3</p> <p>2</p> <p>1</p> <p>0</p> <p>1</p> <p>5</p> <p>5</p> <p>0</p>
+    <p class="teams-name team-secondary">2${coreiaDoSul}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>4</p> <p>4</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">3${coreiaDoSul}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>2</p> <p>3</p> <p>-1</p>
+    <p class="teams-name">3${uruguai}</p>
+    <p>4</p> <p>3</p> <p>1</p> <p>1</p> <p>1</p> <p>2</p> <p>2</p> <p>0</p>
 </div>
 <div class="team">
-    <p class="teams-name">4${uruguai}</p>
-    <p>1</p> <p>2</p> <p>0</p> <p>1</p> <p>1</p> <p>0</p> <p>2</p> <p>-2</p>
+    <p class="teams-name">4${gana}</p>
+    <p>3</p> <p>3</p> <p>1</p> <p>0</p> <p>2</p> <p>5</p> <p>7</p> <p>-2</p>
 </div>
 </div>
 

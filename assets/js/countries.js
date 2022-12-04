@@ -193,7 +193,6 @@ export const countries = {
             text: "A confirmar"
         } 
     }
-
 function timeGMT(){
     const date = new Date()
     const gmt = [date.toTimeString()]
