@@ -17,7 +17,7 @@ export const goals =[
         name: "Saka",
         position:"MC",
         country: `${countries.Inglaterra.code}`,
-        goal: 2
+        goal: 3
     },
     {
         name: "Grealish",
@@ -95,13 +95,13 @@ export const goals =[
         name: "Richarlison",
         position:"AT",
         country: `${countries.Brasil.code}`,
-        goal: 2
+        goal: 3
     },
     {
         name: "Giroud",
         position:"AT",
         country: `${countries.Franca.code}`,
-        goal: 2
+        goal: 3
     },
     {
         name: "Muntari",
@@ -155,7 +155,7 @@ export const goals =[
         name: "Rafael Leão",
         position:"AT",
         country: `${countries.Portugal.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "João Félix",
@@ -197,7 +197,7 @@ export const goals =[
         name: "Mbappé",
         position:"AT",
         country: `${countries.Franca.code}`,
-        goal: 3
+        goal: 5
     },
     {
         name: "Goodwin",
@@ -257,7 +257,7 @@ export const goals =[
         name: "Lewandowski",
         position:"AT",
         country: `${countries.Polonia.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Zieliński",
@@ -564,6 +564,78 @@ export const goals =[
         name: "Wright",
         position:"AT",
         country: `${countries.EstadosUnidos.code}`,
+        goal: 1
+    },
+    {
+        name: "Kane",
+        position:"AT",
+        country: `${countries.Inglaterra.code}`,
+        goal: 1
+    },
+    {
+        name: "Henderson",
+        position:"MC",
+        country: `${countries.Inglaterra.code}`,
+        goal: 1
+    },
+    {
+        name: "Maeda",
+        position:"AT",
+        country: `${countries.Japao.code}`,
+        goal: 1
+    },
+    {
+        name: "Perišić",
+        position:"AT",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Neymar",
+        position:"AT",
+        country: `${countries.Brasil.code}`,
+        goal: 1
+    },
+    {
+        name: "Lucas Paquetá",
+        position:"MC",
+        country: `${countries.Brasil.code}`,
+        goal: 1
+    },
+    {
+        name: "Vinícius Júnior",
+        position:"AT",
+        country: `${countries.Brasil.code}`,
+        goal: 1
+    },
+    {
+        name: "Paik Seung-ho",
+        position:"MC",
+        country: `${countries.CoreiaSul.code}`,
+        goal: 1
+    },
+    {
+        name: "Akanji",
+        position:"ZG",
+        country: `${countries.Suica.code}`,
+        goal: 1
+    },
+    {
+        name: "Gonçalo Ramos",
+        position:"AT",
+        country: `${countries.Portugal.code}`,
+        goal: 3
+    },
+    {
+        name: "Pepe",
+        position:"ZG",
+        country: `${countries.Portugal.code}`,
+        goal: 1
+    },
+    {
+        name: "Raphael Guerreiro",
+        position:"LT",
+        country: `${countries.Portugal.code}`,
         goal: 1
     },
 ]

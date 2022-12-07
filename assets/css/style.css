@@ -106,10 +106,15 @@ body {
 .container .flags {
     width: 90px;
     height: 57px;
-    object-fit: cover;
+    
     animation: flag 2s ease-in-out;
 }
-
+/* .flags,
+.flag-classification,
+.flag-game,
+.flag-player{
+    border: 1px solid #A9A9A9 ;
+} */
 .container .flags:hover {
     transform: scale(1.4);
 }
@@ -194,6 +199,14 @@ body {
     flex-wrap: wrap;
     animation: enter 2s ease-in-out;
 }
+.round span{
+    position: absolute;
+    color: #A9A9A9;
+    background-color: #1c1c1c;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 7px;
+}
 
 .round .date {
     display: flex;
@@ -218,14 +231,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .game .versus p {
     font-size: 15px;
-    letter-spacing: 4px;
-    width: 35px;
+    letter-spacing: 3px;
+    width: 40px;
 }
-
+.game .versus sub{
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
 .countries-game .flag-game {
     width: 50px;
     height: 30px;
@@ -250,6 +269,22 @@ body {
 }
 .red{
     background-color:darkred;
+}
+.final-octave{
+    background-color: rgba(50, 205, 50, 0.2);
+}
+.quarterfinals{
+    background-color: rgba(0, 255, 127, 0.2);
+}
+
+.semifinals{
+    background-color: rgba(0, 250, 154, 0.3);
+}
+.three{
+    background-color: rgba(205, 127, 50, 0.4);
+}
+.final{
+    background-color: rgba(255, 215, 0, 0.4);
 }
 .green:hover {
     transform: scale(1.1);

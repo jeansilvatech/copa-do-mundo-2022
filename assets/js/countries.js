@@ -15,40 +15,103 @@ export const countries = {
         Catar:{
             name: "Catar",
             code: "qa",
-        
+            pt:0,
+            pj:3,
+            v:0,
+            e:0,
+            d:3,
+            gm:1,
+            gc:7,
+            sg: -6
         },
         Equador:{
             name: "Equador",
-            code: "ec"
+            code: "ec",
+            pt:4,
+            pj:3,
+            v:1,
+            e:1,
+            d:1,
+            gm:4,
+            gc:3,
+            sg: 1
             
         },
         Senegal:{
             name: "Senegal",
-            code: "sn"
+            code: "sn",
+            pt:4,
+            pj:3,
+            v:2,
+            e:0,
+            d:1,
+            gm:5,
+            gc:4,
+            sg: 1
         },
         Holanda:{
             name: "Holanda",
-            code: "nl"
+            code: "nl",
+            pt:7,
+            pj:3,
+            v:2,
+            e:1,
+            d:0,
+            gm:5,
+            gc:1,
+            sg: 4
             
         },
         Inglaterra:{
             name: "Inglaterra",
-            code: "gb-eng"
+            code: "gb-eng",
+            pt:7,
+            pj:3,
+            v:2,
+            e:1,
+            d:0,
+            gm:9,
+            gc:2,
+            sg: 7
             
         },
         Ira:{
             name: "Irã",
             code: "ir",
+            pt:3,
+            pj:3,
+            v:1,
+            e:0,
+            d:2,
+            gm:4,
+            gc:7,
+            sg: -3
             
         },
         EstadosUnidos:{
             name: "Estados Unidos",
             code: "us",
+            pt:5,
+            pj:3,
+            v:1,
+            e:2,
+            d:0,
+            gm:2,
+            gc:1,
+            sg: 1
             
         },
         Gales:{
             name: "Gales",
             code: "gb-wls",
+            pt:1,
+            pj:3,
+            v:0,
+            e:1,
+            d:2,
+            gm:1,
+            gc:6,
+            sg: -5
             
         },
         Argentina:{

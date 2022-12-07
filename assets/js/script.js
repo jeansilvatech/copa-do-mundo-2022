@@ -1497,7 +1497,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             
     `
     roundFinal.innerHTML = `
-    <div class="round">
+    <div class="round final-octave">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
@@ -1520,7 +1520,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
@@ -1541,10 +1541,11 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
+<span>pen</span>
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Japao.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Japao.code}.svg" alt="">
             <p>${countries.Japao.name}</p>
         </div>
         <div class="versus">
@@ -1563,6 +1564,7 @@ btnRoundFinal.addEventListener('click', ()=>{
 </div>
 
 <div class="round green">
+<img class="confette" src="./assets/img/confetti.gif" alt="">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
@@ -1572,7 +1574,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[52]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.CoreiaSul.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.CoreiaSul.code}.svg" alt="">
             <p>${countries.CoreiaSul.name}</p>
         </div>
     </div>
@@ -1583,7 +1585,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Inglaterra.code}.svg" alt="">
@@ -1593,7 +1595,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[53]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Senegal.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Senegal.code}.svg" alt="">
             <p>${countries.Senegal.name}</p>
         </div>
     </div>
@@ -1604,7 +1606,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Franca.code}.svg" alt="">
@@ -1614,7 +1616,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[54]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Polonia.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Polonia.code}.svg" alt="">
             <p>${countries.Polonia.name}</p>
         </div>
     </div>
@@ -1625,7 +1627,8 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
+<span>pen</span>
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Marrocos.code}.svg" alt="">
@@ -1635,7 +1638,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[55]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Espanha.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Espanha.code}.svg" alt="">
             <p>${countries.Espanha.name}</p>
         </div>
     </div>
@@ -1646,7 +1649,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final-octave">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Portugal.code}.svg" alt="">
@@ -1656,7 +1659,7 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[56]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Suica.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Suica.code}.svg" alt="">
             <p>${countries.Suica.name}</p>
         </div>
     </div>
@@ -1667,7 +1670,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div> 
 
-<div class="round">
+<div class="round quarterfinals">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
@@ -1688,18 +1691,18 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round green">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Croacia.code}.svg" alt="">
+            <p>${countries.Croacia.name}</p>
         </div>
         <div class="versus">
             <p>${match[58]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
+            <p>${countries.Brasil.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1709,18 +1712,18 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round quarterfinals">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Inglaterra.code}.svg" alt="">
+            <p>${countries.Inglaterra.name}</p>
         </div>
         <div class="versus">
             <p>${match[59]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Franca.code}.svg" alt="">
+            <p>${countries.Franca.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1730,28 +1733,28 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round quarterfinals">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Marrocos.code}.svg" alt="">
+            <p>${countries.Marrocos.name}</p>
         </div>
         <div class="versus">
             <p>${match[60]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Portugal.code}.svg" alt="">
+            <p>${countries.Portugal.name}</p>
         </div>
     </div>
     <div class="date">
         <p class="gold">Quartas de Final 4</p>
         <p>${time.dateFinals[5]}</p>
-        <p>${time.hour[4]}</p>
+        <p>${time.hour[2]}</p>
     </div>
 </div>
 
-<div class="round">
+<div class="round semifinals">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
@@ -1772,7 +1775,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round semifinals">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
@@ -1793,7 +1796,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round three">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
@@ -1814,7 +1817,7 @@ btnRoundFinal.addEventListener('click', ()=>{
     </div>
 </div>
 
-<div class="round">
+<div class="round final">
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
