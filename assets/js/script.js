@@ -1,4 +1,4 @@
-import { countries, groupTitle, language, teamTitle, time } from "./countries.js";
+import { countries, groupTitle, language, oitavasDefinal, quartasDefinal, teamTitle, time } from "./countries.js";
 import { goals } from "./goals.js";
 import { match } from "./matches.js";
 
@@ -1514,7 +1514,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 1</p>
+        <p class="gold">${oitavasDefinal} - 1</p>
         <p>${time.dateFinals[0]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1535,7 +1535,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 2</p>
+        <p class="gold">${oitavasDefinal} - 2</p>
         <p>${time.dateFinals[0]}</p>
         <p>${time.hour[4]}</p>
     </div>
@@ -1557,7 +1557,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 3</p>
+        <p class="gold">${oitavasDefinal} - 3</p>
         <p>${time.dateFinals[2]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1579,7 +1579,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 4</p>
+        <p class="gold">${oitavasDefinal} - 4</p>
         <p>${time.dateFinals[2]}</p>
         <p>${time.hour[4]}</p>
     </div>
@@ -1600,7 +1600,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 5</p>
+        <p class="gold">${oitavasDefinal} - 5</p>
         <p>${time.dateFinals[1]}</p>
         <p>${time.hour[4]}</p>
     </div>
@@ -1621,7 +1621,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 6</p>
+        <p class="gold">${oitavasDefinal} - 6</p>
         <p>${time.dateFinals[1]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1643,7 +1643,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 7</p>
+        <p class="gold">${oitavasDefinal} - 7</p>
         <p>${time.dateFinals[3]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1664,16 +1664,17 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Oitavas de Final 8</p>
+        <p class="gold">${oitavasDefinal} - 8</p>
         <p>${time.dateFinals[3]}</p>
         <p>${time.hour[4]}</p>
     </div>
 </div> 
 
 <div class="round quarterfinals">
+<span>pen</span>
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Holanda.code}.svg" alt="">
             <p>${countries.Holanda.name}</p>
         </div>
         <div class="versus">
@@ -1685,13 +1686,14 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Quartas de Final 1</p>
+        <p class="gold">${quartasDefinal} - 1</p>
         <p>${time.dateFinals[4]}</p>
         <p>${time.hour[4]}</p>
     </div>
 </div>
 
-<div class="round green">
+<div class="round red">
+<span>pen</span>
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Croacia.code}.svg" alt="">
@@ -1701,12 +1703,12 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[58]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Brasil.code}.svg" alt="">
             <p>${countries.Brasil.name}</p>
         </div>
     </div>
     <div class="date">
-        <p class="gold">Quartas de Final 2</p>
+        <p class="gold">${quartasDefinal} - 2</p>
         <p>${time.dateFinals[4]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1715,7 +1717,7 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round quarterfinals">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Inglaterra.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Inglaterra.code}.svg" alt="">
             <p>${countries.Inglaterra.name}</p>
         </div>
         <div class="versus">
@@ -1727,7 +1729,7 @@ btnRoundFinal.addEventListener('click', ()=>{
         </div>
     </div>
     <div class="date">
-        <p class="gold">Quartas de Final 3</p>
+        <p class="gold">${quartasDefinal} - 3</p>
         <p>${time.dateFinals[5]}</p>
         <p>${time.hour[4]}</p>
     </div>
@@ -1743,12 +1745,12 @@ btnRoundFinal.addEventListener('click', ()=>{
             <p>${match[60]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Portugal.code}.svg" alt="">
+            <img class="flag-game eliminate" src="${flagUrl}${countries.Portugal.code}.svg" alt="">
             <p>${countries.Portugal.name}</p>
         </div>
     </div>
     <div class="date">
-        <p class="gold">Quartas de Final 4</p>
+        <p class="gold">${quartasDefinal} - 4</p>
         <p>${time.dateFinals[5]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1757,15 +1759,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round semifinals">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+            <p>${countries.Argentina.name}</p>
         </div>
         <div class="versus">
             <p>${match[61]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Croacia.code}.svg" alt="">
+            <p>${countries.Croacia.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1778,15 +1780,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round semifinals">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Franca.code}.svg" alt="">
+            <p>${countries.Franca.name}</p>
         </div>
         <div class="versus">
             <p>${match[62]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Marrocos.code}.svg" alt="">
+            <p>${countries.Marrocos.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1799,19 +1801,19 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round three">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Croacia.code}.svg" alt="">
+            <p>${countries.Croacia.name}</p>
         </div>
         <div class="versus">
             <p>${match[63]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Marrocos.code}.svg" alt="">
+            <p>${countries.Marrocos.name}</p>
         </div>
     </div>
     <div class="date">
-        <p class="gold">3º Lugar</p>
+        <p class="gold">3º</p>
         <p>${time.dateFinals[8]}</p>
         <p>${time.hour[2]}</p>
     </div>
@@ -1820,15 +1822,15 @@ btnRoundFinal.addEventListener('click', ()=>{
 <div class="round final">
     <div class="game">
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+            <p>${countries.Argentina.name}</p>
         </div>
         <div class="versus">
             <p>${match[64]}</p>
         </div>
         <div class="countries-game">
-            <img class="flag-game" src="${flagUrl}${countries.Default.code}.svg" alt="">
-            <p>${countries.Default.text}</p>
+            <img class="flag-game" src="${flagUrl}${countries.Franca.code}.svg" alt="">
+            <p>${countries.Franca.name}</p>
         </div>
     </div>
     <div class="date">
@@ -1837,6 +1839,11 @@ btnRoundFinal.addEventListener('click', ()=>{
         <p>${time.hour[2]}</p>
         
     </div>
+</div>
+<div class="champion">
+            <img class="trophy" src="./assets/img/copa-do-mundo.png" alt="">
+            <img class="flag-champion" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+            <p>${countries.Argentina.name}</p>
 </div>
     `
 const catar= `<img class="flag-classification" src="${flagUrl}${countries.Catar.code}.svg" alt="">${countries.Catar.name}`
@@ -2102,16 +2109,14 @@ about.innerHTML = `
                 <h4 class="dev">Front End Developer Jr</h4>
             </div>
             <div class="social">
-                <a href="https://github.com/jeansilvatech"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jeanpesil/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/jeansilvatech"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/jeansilvatech" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeanpesil/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jeansilvatech" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://jeansilvatech.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i></a>
             </div>
 
             <div class="footer">
-            <p>Para doações</p>
-            <i class="fa-brands fa-pix"></i>
-            <img src="./assets/img/qrcode-pix.png" alt="">
-            <h4 class="code-pix">Copiar Código</h4>
+           
             <p>Copyright © <span></span></p>
             </div>
         </div>
@@ -2144,17 +2149,16 @@ about.innerHTML = `
 const year = new Date().getFullYear()
 const span = document.querySelector('.footer p span');
 span.innerText = year
-const btnCodePix = document.querySelector('.footer .code-pix')
-btnCodePix.addEventListener('click', ()=>{
-const copyText = '00020126360014BR.GOV.BCB.PIX0114+553197161719252040000530398654040.005802BR5921Jean Pereira da Silva6014Belo Horizonte62180514DOACAOSITECOPA6304D2A9'
-navigator.clipboard.writeText(copyText);
-setTimeout(() => {
-    btnCodePix.innerText = 'Copiar Código'
-    btnCodePix.style.backgroundColor = 'white'
-    btnCodePix.style.color = '#1c1c1c'
-}, 3000);
-btnCodePix.innerText = 'Copiado!'
-btnCodePix.style.backgroundColor = template.BG
-btnCodePix.style.color = template.COLOR
-        
-})
+
+
+const dateFinal = new Date().getDate();
+const monthFinal = new Date().getMonth() +1;
+const final = document.querySelector('.final')
+const thirdPlace = document.querySelector('.three')
+if(dateFinal === 17 && monthFinal===12){
+    thirdPlace.style.animation = 'three 5s infinite'
+ }
+
+if(dateFinal === 18 && monthFinal===12){
+   final.style.animation = 'final 5s infinite'
+}

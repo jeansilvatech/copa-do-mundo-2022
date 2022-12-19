@@ -344,6 +344,8 @@ function timeGMT(){
 const languageUser = window.navigator.language
 export let groupTitle = 'Grupo'
 export let teamTitle = 'Equipe'
+export let oitavasDefinal = 'Oitavas de Final'
+export let quartasDefinal = 'Quartas de Final'
 export function language(){
     switch(languageUser){
         case 'pt-BR':
@@ -454,6 +456,8 @@ export function language(){
             countries.Uruguai.name= 'Uruguay'
             countries.CoreiaSul.name= 'Corea del Sur'
             teamTitle = 'Equipo'
+            oitavasDefinal = 'Octavas de Finales'
+            quartasDefinal = 'Cuartas de Finales'
             btnStrikers.innerText = 'Artilleros'
         break;
         
@@ -529,6 +533,8 @@ export function language(){
             countries.CoreiaSul.name= 'South Korea'
             groupTitle = 'Group'
             teamTitle = 'Team'
+            oitavasDefinal = 'Round of 16'
+            quartasDefinal ='Quarterfinals'
             btnStrikers.innerText = 'Strikers'
 
     }

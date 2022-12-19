@@ -83,7 +83,7 @@ export const goals =[
         name: "Messi",
         position:"AT",
         country:`${countries.Argentina.code}`,
-        goal: 3
+        goal: 7
     },
     {
         name: "Ferrán Torres",
@@ -101,7 +101,7 @@ export const goals =[
         name: "Giroud",
         position:"AT",
         country: `${countries.Franca.code}`,
-        goal: 3
+        goal: 4
     },
     {
         name: "Muntari",
@@ -197,7 +197,7 @@ export const goals =[
         name: "Mbappé",
         position:"AT",
         country: `${countries.Franca.code}`,
-        goal: 5
+        goal: 8
     },
     {
         name: "Goodwin",
@@ -287,7 +287,7 @@ export const goals =[
         name: "Aboukhlal",
         position:"AT",
         country: `${countries.Marrocos.code}`,
-        goal: 2
+        goal: 1
     },
     {
         name: "Sabiri",
@@ -462,7 +462,7 @@ export const goals =[
         name: "J. Álvarez",
         position:"AT",
         country: `${countries.Argentina.code}`,
-        goal: 2
+        goal: 4
     },
     {
         name: "Ziyech",
@@ -474,7 +474,7 @@ export const goals =[
         name: "En-Nesyri",
         position:"AT",
         country: `${countries.Marrocos.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Tanaka",
@@ -570,7 +570,7 @@ export const goals =[
         name: "Kane",
         position:"AT",
         country: `${countries.Inglaterra.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Henderson",
@@ -594,7 +594,7 @@ export const goals =[
         name: "Neymar",
         position:"AT",
         country: `${countries.Brasil.code}`,
-        goal: 1
+        goal: 2
     },
     {
         name: "Lucas Paquetá",
@@ -638,4 +638,64 @@ export const goals =[
         country: `${countries.Portugal.code}`,
         goal: 1
     },
+    {
+        name: "Petkovic",
+        position:"AT",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Molina",
+        position:"LT",
+        country: `${countries.Argentina.code}`,
+        goal: 1
+    },
+    {
+        name: "Weghorst",
+        position:"AT",
+        country: `${countries.Holanda.code}`,
+        goal: 2
+    },
+    {
+        name: "Tchouaméni",
+        position:"MC",
+        country: `${countries.Franca.code}`,
+        goal: 1
+    },
+    {
+        name: "T. Hernández",
+        position:"LT",
+        country: `${countries.Franca.code}`,
+        goal: 1
+    },
+    {
+        name: "Kolo Muani",
+        position:"AT",
+        country: `${countries.Franca.code}`,
+        goal: 1
+    },
+    {
+        name: "Dari",
+        position:"ZG",
+        country: `${countries.Marrocos.code}`,
+        goal: 1
+    },
+    {
+        name: "Gvardiol",
+        position:"ZG",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Oršić",
+        position:"MC",
+        country: `${countries.Croacia.code}`,
+        goal: 1
+    },
+    {
+        name: "Di María",
+        position:"MC",
+        country: `${countries.Argentina.code}`,
+        goal: 1
+    }
 ]
