@@ -1820,6 +1820,7 @@ btnRoundFinal.addEventListener('click', ()=>{
 </div>
 
 <div class="round final">
+    <span>pen</span>
     <div class="game">
         <div class="countries-game">
             <img class="flag-game" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
