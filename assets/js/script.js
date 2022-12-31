@@ -1841,10 +1841,11 @@ btnRoundFinal.addEventListener('click', ()=>{
         
     </div>
 </div>
+
 <div class="champion">
-            <img class="trophy" src="./assets/img/copa-do-mundo.png" alt="">
-            <img class="flag-champion" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
-            <p>${countries.Argentina.name}</p>
+    <img class="trophy" src="./assets/img/copa-do-mundo.png" alt="">
+    <img class="flag-champion" src="${flagUrl}${countries.Argentina.code}.svg" alt="">
+    <p>${countries.Argentina.name}</p>
 </div>
     `
 const catar= `<img class="flag-classification" src="${flagUrl}${countries.Catar.code}.svg" alt="">${countries.Catar.name}`
