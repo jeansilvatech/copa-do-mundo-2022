@@ -415,7 +415,7 @@ export function language(){
                 `17/12 - ${es[6]}`,
                 `18/12 - ${es[0]}`
             ]
-            document.title = 'Copa del Mundo'
+            document.title = 'Copa del Mundo 2022'
             btnClassification.innerText = 'Clasificación'
             btnCountries.innerText = 'Países'
             btnGames.innerText = 'Juegos'
@@ -491,7 +491,7 @@ export function language(){
                 `17/12 - ${en[6]}`,
                 `18/12 - ${en[0]}`
             ]
-            document.title = 'World Cup'
+            document.title = 'World Cup 2022'
             btnClassification.innerText = 'Classification'
             btnCountries.innerText = 'Countries'
             btnGames.innerText = 'Matches'
