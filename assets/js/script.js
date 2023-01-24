@@ -2150,7 +2150,7 @@ about.innerHTML = `
 
 const year = new Date().getFullYear()
 const span = document.querySelector('.footer p span');
-span.innerText = year
+span.innerText = `2022 - ${year}`
 
 
 const dateFinal = new Date().getDate();
