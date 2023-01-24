@@ -191,7 +191,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #c1c1c1;
+    border: 1px solid #c1c1c1;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
    
@@ -275,18 +275,18 @@ body {
 .red{
     background-color:darkred;
 }
-.final-octave{
-    /* background-color: rgba(50, 205, 50, 0.2); */
+/* .final-octave{
+    background-color: rgba(50, 205, 50, 0.2);
     
 }
 .quarterfinals{
-    /* background-color: rgba(0, 255, 127, 0.2); */
+    background-color: rgba(0, 255, 127, 0.2);
 }
 
 .semifinals{
-    /* background-color: rgba(0, 250, 154, 0.3); */
-    /* animation: semifinals 5s infinite; */
-}
+    background-color: rgba(0, 250, 154, 0.3); */
+    /* animation: semifinals 5s infinite;
+} */
 @keyframes semifinals {
     0%{
         background-color: rgba(0, 250, 154, 0.1);
@@ -641,6 +641,8 @@ body {
         width: 100vw;
         margin: 0;
         border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid #c1c1c1;
     }
     .navigation h2 {
         font-size: 16px;
